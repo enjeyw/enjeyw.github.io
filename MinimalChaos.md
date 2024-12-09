@@ -3,7 +3,7 @@ title: "Understanding Chaos"
 permalink: /MimimalChaos/
 
 
-#Foo
+# Foo
 bar
 baz
 
