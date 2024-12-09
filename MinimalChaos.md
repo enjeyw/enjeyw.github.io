@@ -4,6 +4,6 @@ permalink: /MimimalChaos/
 
 
 # Foo
-bar
+bart
 baz
 
