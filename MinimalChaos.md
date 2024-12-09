@@ -1,6 +1,6 @@
 layout: page
 title: "Understanding Chaos"
-permalink: /MimimalChaos
+permalink: /MimimalChaos/
 
 
 #Foo
