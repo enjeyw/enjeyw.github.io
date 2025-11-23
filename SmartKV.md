@@ -1,5 +1,7 @@
 # Learned Gated KV Cache: From Heuristics to Learned Sparsity
 
+NOTE: this is basically my internal working notes and not designed for public consumption just yet....
+
 ## 1. Motivation
 
 Large Language Models (LLMs) are memory-bound during inference, primarily due to the Key-Value (KV) cache which grows linearly with sequence length. For a 7B model with a long context, the KV cache can easily exceed the size of the model weights themselves.
@@ -115,9 +117,5 @@ The Global Union Policy is a strategy that marks a token as "globally important"
 
 ---
 
-## 7. Conclusion
-
-We have demonstrated that **learned sparsity** is viable. By moving from complex regression ($4^x$) to robust binary classification, we achieved high-accuracy prediction of token importance. The integration of Batched Gates and the Global Union Policy allows this to run efficiently within standard LLM pipelines.
-
-Future work will focus on relaxing the Global Union Policy (e.g., via block-sparse masking) to unlock higher compression rates.
+... still need to benchmark actual reduction % here but looking positive....
 
