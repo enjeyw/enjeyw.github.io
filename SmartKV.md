@@ -81,7 +81,7 @@ At a standard 50% probability threshold, the model is conservative about predict
 For KV caching, **Recall is paramount**. Dropping an important token breaks the generation, while keeping a useless one just wastes a bit of RAM. By lowering the threshold to 0.1, we drastically improve Recall.
 
 ![Confusion Matrix 0.1](smartkv/layer0_cm_t0.1.png)
-*Figure 5: Confusion Matrix at Threshold 0.1. We successfully capture the vast majority of "Important" tokens (bottom-right quadrant is minimized) at the cost of keeping more "Trash" tokens (top-right).*
+*Figure 5: Confusion Matrix at Threshold 0.1. We successfully capture the vast majority of "Important" tokens (bottom-left quadrant is minimized) at the cost of keeping more "Trash" tokens (top-right).*
 
 ---
 
